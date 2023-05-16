@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vinylify.Pages.LogIn"
+             Title="Login to Spotify">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+        <Label
+                Text="Welcome to Vinylify!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="36"
+                HorizontalOptions="Center" />
+        <Label
+                Text="Login to spotify to continue."
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="30"
+                HorizontalOptions="Center" />
+        <Image
+                Source="spotify_app_logo.png"
+                HeightRequest="100"
+                WidthRequest="100"/>
+        <Button 
+                Text="Log in"
+                WidthRequest="100"
+                HeightRequest="50"
+                Clicked="Login_Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
